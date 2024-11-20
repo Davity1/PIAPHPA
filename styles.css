@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: roboto, sans-serif;
+    margin: auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(251, 251, 115) !important;
+}
+/* Insertar, consultar, eliminar y actualizar datos EVA3 */
+input[type=text],
+input[type=date],
+input[type=password]{
+    width: 100%;
+    background-color: #ffecf2;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2 solid;
+    animation: Cambiarcolor 3s infinite;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.enviar{
+    width: 100%;
+    background-color: #ffecf2;
+    border: 2 solid;
+    animation: Cambiarcolor 3s infinite;
+    color: red;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-shadow: 
+                0 0 1px pink, 
+                0 0 6px pink, 
+                0 0 11px pink, 
+                0 0 17px pink;
+}
+.enviar:hover{
+    color: red;
+    text-shadow: 
+                0 0 5px pink, 
+                0 0 10px pink, 
+                0 0 15px pink, 
+                0 0 19px pink;
+}
+.contenedor-formularios{
+    border-radius: 5%;
+    background-color: #ffecf2;
+    padding: 20px;
+    width: fit-content;
+}
+fieldset{
+    margin-bottom: 10px;
+    animation: Cambiarcolor 3s infinite;
+    text-shadow: 
+                0 0 3px red, 
+                0 0 8px red, 
+                0 0 13px red, 
+                0 0 18px red;
+}
+label{
+    color: #FF01B3;
+    text-shadow: 
+                0 0 3px pink, 
+                0 0 8px pink, 
+                0 0 13px pink, 
+                0 0 18px pink; 
+}
+h1{
+    color: #f26666 !important;
+    font-family: Sour Gummy, sans-serif !important;
+    width: fit-content !important;
+    margin: auto !important;
+    text-shadow: 
+                0 0 3px white, 
+                0 0 8px white, 
+                0 0 13px white, 
+                0 0 18px white !important; 
+}
+.cambiar-borde {
+    border-collapse: collapse;
+}
+
+.cambiar-borde th, .cambiar-borde td {
+    border: 3px solid;
+    animation: Cambiarcolor 3s infinite;
+}
+@keyframes Cambiarcolor {
+    0% { border-color: #FF073A; } /* Neón rojo */
+    10% { border-color: #FF5E00; } /* Neón naranja */
+    20% { border-color: #FFD700; } /* Neón amarillo */
+    30% { border-color: #00FF00; } /* Neón verde */
+    40% { border-color: #00BFFF; } /* Neón azul claro */
+    50% { border-color: #6A0AD6; } /* Neón índigo */
+    60% { border-color: #DA70D6; } /* Neón violeta */
+    70% { border-color: #FF1493; } /* Neón rosa */
+    80% { border-color: #D3D3D3; } /* Neón gris claro */
+    90% { border-color: #8B4513; } /* Neón marrón */
+    100% { border-color: #FF073A; } /* Regresa al color inicial */
+  }
+/* Precentacion EVA1 */
+.contenedor-presentacion{
+    position: relative;
+    width: 80%;
+    margin:auto;
+    padding-top: 56.2500%;
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+    overflow: hidden;
+    border-radius: 8px;
+    will-change: transform;
+}
+.presentacion{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.link{
+    text-decoration: underline;
+    animation: cambioLink 2s infinite;
+    font-family: Sour Gummy, sans-serif !important;
+    font-size: 2vw;
+    font-weight: 500;
+}
+@keyframes cambioLink {
+    0% {
+        color: pink;
+    }
+    50%{
+        color: Red;
+    }
+    100%{
+        color:pink;
+    }
+}
